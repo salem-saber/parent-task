@@ -42,6 +42,7 @@ php artisan migrate
    1. DataProviderX.json
    2. DataProviderY.json
 
+    you can easily add more json files in the same folder then create mappers in insert command to match json structure and run the command to insert the data to the database. 
 
 7. Run the command to insert the data from json files to database
 ```sh
@@ -49,10 +50,18 @@ php artisan insert:provider-data
 ```
 other way : this command line is run in background daily with skip the exists data.
 
-8. Run the server
+8. Run the server using the following command
 ```sh
 php artisan serve
 ```
+or using docker
+```sh
+docker-compose build
+docker-compose up -d
+```
+
+
+
 ___
 
 ## Code Architecture 
